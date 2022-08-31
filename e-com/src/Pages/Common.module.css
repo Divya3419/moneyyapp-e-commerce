@@ -1,0 +1,26 @@
+.container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  height: 100%;
+}
+.card {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card div {
+  height: 100%;
+}
+.container img {
+  width: 100%;
+}
+.container button {
+  background-color: rgb(223, 239, 223);
+  color: green;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}

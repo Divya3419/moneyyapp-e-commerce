@@ -1,0 +1,14 @@
+.nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: rgb(211, 242, 211);
+  font-size: 25px;
+  font-weight: bold;
+  height: 40px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+.link {
+  color: green;
+  text-decoration: none;
+}
