@@ -12,3 +12,38 @@
   color: green;
   text-decoration: none;
 }
+
+/* medium */
+@media screen and (max-width: 600px) {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(211, 242, 211);
+    font-size: 20px;
+    font-weight: bold;
+    height: 40px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .link {
+    color: green;
+    text-decoration: none;
+  }
+}
+/* small */
+@media screen and (max-width: 300px) {
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgb(211, 242, 211);
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .link {
+    color: green;
+    text-decoration: none;
+  }
+}

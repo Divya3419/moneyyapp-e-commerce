@@ -27,18 +27,18 @@ const Product = () => {
         return (
           <div className={styles.card} key={ele.id}>
             <img src={ele.image_link} alt="" />
-            <div>
-              <p>Brand : {ele.brand}</p>
-              <p>Product Name : {ele.name}</p>
-              <p>Price : {ele.price}</p>
-              <button
-                onClick={() => {
-                  addToCart(ele);
-                }}
-              >
-                Add to Cart
-              </button>
-            </div>
+
+            <p>Brand : {ele.brand}</p>
+            <p>{ele.name}</p>
+            <p>Price : {ele.price}</p>
+
+            <button
+              onClick={() => {
+                addToCart(ele);
+              }}
+            >
+              Add to Cart
+            </button>
           </div>
         );
       })}
