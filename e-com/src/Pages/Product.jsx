@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
-import styles from "./Common.module.css";
+import styles from "./Product.module.css";
 import { useDispatch } from "react-redux";
 import { postCart } from "../Redux/action";
 import { useNavigate } from "react-router-dom";

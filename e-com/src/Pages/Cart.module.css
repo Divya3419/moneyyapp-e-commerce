@@ -1,0 +1,66 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  width: 60%;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.container button {
+  background-color: rgb(224, 74, 24);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* medimum */
+@media screen and (max-width:600px){
+    .card {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: auto;
+        width: 60%;
+        margin-bottom: 50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-size: 13px;
+      }
+      .card img{
+        width:100%;
+      }
+      .container button {
+        background-color: rgb(224, 74, 24);
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 12px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+}
+/* small */
+@media screen and (max-width:300px){
+    .card {
+        display:block;
+        margin: auto;
+        width: 60%;
+        margin-bottom: 50px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        font-size: 13px;
+      }
+      .card img{
+        width:100%;
+      }
+      .container button {
+        background-color: rgb(224, 74, 24);
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 12px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+}

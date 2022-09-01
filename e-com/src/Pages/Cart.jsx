@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import styles from "./Common.module.css";
+import styles from "./Cart.module.css";
 import { useSelector, useDispatch } from "react-redux";
 import { getCart } from "../Redux/action";
 import axios from "axios";
@@ -18,7 +18,9 @@ const Cart = () => {
         data.map((ele) => {
           return (
             <div className={styles.card} key={ele.id}>
+              <div>
               <img src={ele.image_link} alt="" />
+              </div>
               <div>
                 <p>Brand : {ele.brand}</p>
                 <p>Product Name : {ele.name}</p>
