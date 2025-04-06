@@ -5,8 +5,11 @@
   width: 60%;
   margin-bottom: 50px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 15px;
 }
-
+.card img{
+  width: 30%;
+}
 .container button {
   background-color: rgb(224, 74, 24);
   color: white;
@@ -27,6 +30,7 @@
         margin-bottom: 50px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         font-size: 13px;
+        padding: 15px;
       }
       .card img{
         width:100%;
@@ -50,6 +54,7 @@
         margin-bottom: 50px;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         font-size: 13px;
+        padding: 15px;
       }
       .card img{
         width:100%;

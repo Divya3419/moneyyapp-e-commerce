@@ -19,14 +19,14 @@ const Cart = () => {
           return (
             <div className={styles.card} key={ele.id}>
               <div>
-              <img src={ele.image_link} alt="" />
+              <img src={ele.image} alt="" />
               </div>
               <div>
-                <p>Brand : {ele.brand}</p>
-                <p>Product Name : {ele.name}</p>
+                <p>Category : {ele.category}</p>
+                <p>Product Name : {ele.title}</p>
                 <p>Price : {ele.price}</p>
                 <button onClick={()=>{
-                  axios.delete(`https://blueproduct.herokuapp.com/cartItem/${ele.id}`).then(()=>{
+                  axios.delete(`  http://localhost:3000/posts/${ele.id}`).then(()=>{
                     dispatch(getCart(data));
                   })
                 }} >Delete</button>

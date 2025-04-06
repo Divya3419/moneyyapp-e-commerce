@@ -10,7 +10,7 @@ const Product = () => {
   const navigate = useNavigate();
   useEffect(() => {
     axios
-      .get("https://blueproduct.herokuapp.com/product")
+      .get("https://fakestoreapi.com/products")
       .then((r) => setData(r.data))
       .catch((e) => e);
   }, []);
@@ -26,10 +26,10 @@ const Product = () => {
       {data.map((ele) => {
         return (
           <div className={styles.card} key={ele.id}>
-            <img src={ele.image_link} alt="" />
+            <img src={ele.image} alt="" />
 
-            <p>Brand : {ele.brand}</p>
-            <p>{ele.name}</p>
+            <p>Category : {ele.category}</p>
+            <p>{ele.title}</p>
             <p>Price : {ele.price}</p>
 
             <button

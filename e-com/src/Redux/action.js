@@ -11,7 +11,7 @@ import {
 export const postCart = (payload) => (dispatch) => {
   dispatch({ type: POST_CART_REQUEST });
   return axios
-    .post("https://blueproduct.herokuapp.com/cartItem", payload)
+    .post("http://localhost:8080/posts", payload)
     .then((r) => {
       dispatch({ type: POST_CART_SUCCESS, payload: r.data });
       //   return { type: POST_CART_SUCCESS };
@@ -26,7 +26,7 @@ export const postCart = (payload) => (dispatch) => {
 export const getCart = (payload) => (dispatch) => {
   dispatch({ type: GET_CART_REQUEST });
   return axios
-    .get("https://blueproduct.herokuapp.com/cartItem", payload)
+    .get("  http://localhost:8080/posts", payload)
     .then((r) => {
       dispatch({ type: GET_CART_SUCCESS, payload: r.data });
       return { type: GET_CART_SUCCESS };
